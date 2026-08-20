@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint: #e7f4ef;
+  --color-primary: #1e8a6e;
+  --color-primary-dark: #0f3d33;
+  --color-ink: #37474f;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdfefe;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar discret pour les filtres du catalogue sur mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
