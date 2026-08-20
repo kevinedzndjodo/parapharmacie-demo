@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import { categories, products } from "../data/products"
-import { SITE } from "../data/site"
 import WhatsAppButton from "../components/WhatsAppButton"
 import ProductCard from "../components/ProductCard"
 import { ArrowIcon, HeartIcon, ShieldIcon, WhatsAppIcon } from "../components/icons"
@@ -192,7 +191,7 @@ export default function Home() {
             className="mt-5"
             variant="ghost"
           >
-            Discuter avec {SITE.name}
+            Discuter avec l'équipe
           </WhatsAppButton>
         </div>
       </section>

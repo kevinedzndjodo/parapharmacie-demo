@@ -1,5 +1,14 @@
+import { Link } from "react-router-dom"
 import { SITE, whatsappLink } from "../data/site"
 import { ClockIcon, LeafIcon, PinIcon, WhatsAppIcon } from "./icons"
+
+const footerLinks = [
+  { to: "/", label: "Accueil" },
+  { to: "/catalogue", label: "Nos produits" },
+  { to: "/a-propos", label: "À propos" },
+  { to: "/vision", label: "Notre vision" },
+  { to: "/contact", label: "Contact" },
+]
 
 export default function Footer() {
   return (
@@ -17,6 +26,24 @@ export default function Footer() {
             pour toute la famille.
           </p>
         </div>
+
+        <nav aria-label="Navigation">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-white/80">
+            Navigation
+          </h3>
+          <ul className="mt-3 space-y-2 text-sm text-white/80">
+            {footerLinks.map((l) => (
+              <li key={l.to}>
+                <Link
+                  to={l.to}
+                  className="inline-flex min-h-8 items-center transition-colors hover:text-white"
+                >
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <div>
           <h3 className="text-sm font-bold uppercase tracking-wider text-white/80">

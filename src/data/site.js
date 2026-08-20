@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "PharmaVie Parapharmacie",
+  name: "Parapharmacie",
   tagline: "Votre santé et votre bien-être au quotidien",
   phone: "237XXXXXXXXX",
   address: "Rue 1234, Akwa — Douala, Cameroun",
